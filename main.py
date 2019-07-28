@@ -3,12 +3,15 @@ class TestClass:
         self.object_name = name
 
     def poorly_written_nested_function(self):
+        return 1
 
-        return '1'
+    def poorly_written_other_nested_function(self):
+        return 2
 
-    def function_which_uses_print_to_screen(self):
+    def function_which_uses_poorly_written_nested_functions(self):
         k = self.poorly_written_nested_function()
-        return k
+        l = self.poorly_written_other_nested_function()
+        return k + l
 
 
 
