@@ -1,11 +1,7 @@
 import unittest
 from unittest import mock
+
 import main
-
-
-def overridden_print():
-    return 'you got overridden'
-
 
 class TestModule(unittest.TestCase):
 
